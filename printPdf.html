@@ -1,0 +1,41 @@
+<!doctype html>
+<html style="height:100%;font-size:14px;">
+
+<head>
+    <meta name="spreadjs culture" content="zh-cn" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- 引入SpreadJS相关的CSS,默认会有一个CSSSpreadJS默认提供了7种CSS，可以选择一个适合当前项目的引入-->
+    <link rel="stylesheet" type="text/css" href="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/zh/purejs/node_modules/@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css">
+    <!-- 核心资源，最小依赖资源，只要引入了该资源，组件运行时就能显示出来 -->
+    <script src="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/zh/purejs/node_modules/@grapecity/spread-sheets/dist/gc.spread.sheets.all.min.js" type="text/javascript"></script>
+    <!--文件保存相关资源-->
+    <script src="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/spread/source/js/FileSaver.js" type="text/javascript"></script>
+    <!-- 打印相关资源 -->
+    <script src="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/zh/purejs/node_modules/@grapecity/spread-sheets-print/dist/gc.spread.sheets.print.min.js" type="text/javascript"></script>
+    <!--PDF相关资源-->
+    <script src="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/zh/purejs/node_modules/@grapecity/spread-sheets-pdf/dist/gc.spread.sheets.pdf.min.js" type="text/javascript"></script>
+    <!-- 中文资源文件，组件运行时默认会用英文资源，使用中文资源需要引入并设置 -->
+    <script src="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/zh/purejs/node_modules/@grapecity/spread-sheets-resources-zh/dist/gc.spread.sheets.resources.zh.min.js" type="text/javascript"></script>
+    <script src="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/spread/source/js/license.js" type="text/javascript"></script>
+    <!--引入JS文件-->
+    <script src="printPdf.js" type="text/javascript"></script>
+    <!--引入CSS文件-->
+    <link rel="stylesheet" type="text/css" href="printPdf.css">
+</head>
+<body>
+    <div class="sample-tutorial">
+        <div id="ss" class="sample-spreadsheets"></div>
+        <div class="options-container">
+            <p>Click this button to export the Spread component to a PDF file.</p>
+            <div class="option-row">
+                <!--导出Pdf按钮-->
+                <input type="button" style="height: 70px;" value="Export PDF" id="savePDF">
+                <hr>
+                <!--打印按钮-->
+                <input type="button"  style="height: 70px;" value="Print" id="btnPrint">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
